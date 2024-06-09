@@ -1,0 +1,299 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4db8ff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('fig1.png') no-repeat center center/cover;
+    padding: 120px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    color: navy;
+}
+
+.hero .highlight {
+    color: #4db8ff;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .cta {
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .cta input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.hero .cta button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4db8ff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.hero .cta button:hover {
+    background-color: #3399cc;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stat {
+    flex: 1;
+}
+
+.stat h2 {
+    color: #4db8ff;
+    font-size: 48px;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+/* Learning Sections */
+.learning-science,
+.vedic-maths,
+.bespoke {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.learning-science h2,
+.vedic-maths h2,
+.bespoke h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.learning-item {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.learning-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.learning-item p {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+
+.learning-item a {
+    color: #4db8ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Catalogue Section */
+.catalogue {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.catalogue h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.catalogue p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.catalogue-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catalogue-item {
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.catalogue-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.catalogue-item h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.catalogue-item a {
+    color: #4db8ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Connect Section */
+.connect {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #4db8ff;
+    color: #fff;
+}
+
+.connect h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.connect .cta {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.connect .cta input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.connect .cta button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #4db8ff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.connect .cta button:hover {
+    background-color: #e6f7ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0 0 0;
+}
+
+footer ul li a {
+    font-size: 14px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #4db8ff;
+}
